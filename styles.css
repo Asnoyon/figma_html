@@ -1,0 +1,340 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+/* navbar css start here */
+.navbar {
+  background: #d9d9d9 !important;
+  padding-left: 2.225rem;
+  padding-right: 2.225rem;
+}
+.navbar-icon {
+  color: #7d66bf;
+}
+.navbar-light .navbar-toggler {
+  border-color: #7d66bf;
+}
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 0.188rem;
+  background-color: #ffffff;
+  margin: auto;
+  display: block;
+}
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s linear;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 55%;
+  bottom: 45%;
+  font-family: "Montserrat";
+}
+.carousel-caption h5 {
+  font-size: 4.625rem;
+  margin: 0;
+}
+.carousel-caption h1 {
+  font-size: 4.625rem;
+  margin: 0;
+}
+.carousel-caption p {
+  font-size: 1.25rem;
+}
+
+/* navbar css end here */
+
+/* about section starts here */
+.about_us,
+.service,
+.contact_us {
+  text-decoration: underline;
+  text-decoration-color: #626566;
+  text-decoration-thickness: 0.5rem;
+  margin-bottom: 0.188rem;
+}
+.about {
+  color: #7d66bf;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 7.5rem; /* 133.333% */
+  letter-spacing: -0.188rem;
+  padding-right: 0.125rem;
+}
+.us {
+  color: #7d66bf;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 7.5rem;
+  letter-spacing: -0.125rem;
+}
+.content_section {
+  background: #a79fbe;
+}
+.content {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.563rem;
+  /* font-style: normal;
+  font-weight: 400;
+  line-height: 20.5px; */
+  text-align: justify;
+}
+
+.button {
+  padding-top: 0.625rem;
+  margin-left: 40%;
+}
+.learn_more {
+  border-radius: 3.125rem;
+  background: #d9d9d9;
+  width: 12.5rem;
+  height: 5rem;
+}
+.learn_more_button {
+  color: #7d66bf;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  /* font-style: normal;
+  font-weight: 700;
+  line-height: 59.5px; */
+  margin-top: 1.125rem;
+  margin-left: 0.75rem;
+}
+.learn_more a {
+  text-align: center;
+}
+/* about section ends here */
+
+/* service section start */
+
+#ourservice_section {
+  margin-left: 5%;
+}
+.paragraph {
+  color: #404040;
+  font-family: Montserrat;
+  font-size: 1.563rem;
+  font-style: normal;
+  /* font-weight: 300; */
+  /* line-height: 68px; */
+  /* text-align: justify; */
+  margin-top: 3%;
+}
+.image {
+  /* margin-right: 10%; */
+  margin-right: -10%;
+}
+
+/* service section end */
+
+/* contact us start here */
+
+#contact_us {
+  background: #f8f8f8;
+}
+.form-area {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.row.single-form {
+  box-shadow: 0 0.125 1.25rem -0.313rem rgba(0, 0, 0, 0.5);
+}
+.left {
+  background: #7d66bf;
+  padding: 12.5rem 6.125rem;
+}
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.left h2 span {
+  font-weight: 100;
+}
+.single-form {
+  background: #fff;
+}
+.right {
+  padding: 4.375rem 6.25rem;
+  position: relative;
+}
+.right i {
+  position: absolute;
+  font-size: 5rem;
+  left: -1.688rem;
+  top: 40%;
+  color: #fff;
+}
+.form-control {
+  border: 0.125rem solid #000;
+}
+.right button {
+  border: none;
+  border-radius: 0.313rem;
+  background: #7d66bf;
+  width: 11.25rem;
+  color: #fff;
+  padding: 0.938rem 0rem;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  cursor: pointer;
+  text-align: center;
+}
+.right button:hover {
+  background-color: #8268c8;
+}
+
+.upper_section p {
+  color: hsl(0, 5%, 65%);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.381rem; /* 130% */
+}
+.greetings {
+  color: #7d66bf;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem; /* 120% */
+}
+/*responsive*/
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+} */
+
+/* @media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+} */
+
+/* contact us end here */
+
+/* footer start here */
+.social {
+  cursor: pointer;
+}
+.map_addres {
+  text-align: justify;
+}
+.bottom {
+  padding-top: 7%;
+}
+.middle_section {
+  padding-top: 8%;
+}
+
+footer {
+  background: #7d66bf;
+  padding: 5.375rem 0;
+}
+.single-content {
+  text-align: center;
+  padding: 7.188rem 0;
+}
+.single-box p {
+  color: #fff;
+  line-height: 1.9;
+  font-size: 1.25rem;
+}
+.single-box h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+.single-box .card-area i {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-right: 0.625rem;
+}
+.single-box ul {
+  list-style: none;
+  padding: 0;
+}
+.single-box ul li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.5rem;
+  font-weight: 100;
+}
+.single-box h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#basic-addon2 {
+  background: #fe1e4f;
+  color: #fff;
+}
+
+/* media query end here */
+@media (max-width: 998px) {
+  html {
+    font-size: 75%;
+  }
+  .nav-link:hover::after {
+    width: 25%;
+  }
+  .carousel-caption {
+    right: 0;
+    bottom: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 65%;
+  }
+  .right button {
+    width: 7.25rem;
+  }
+}
+@media (max-width: 479px) {
+  html {
+    font-size: 55%;
+  }
+  .right button {
+    width: 5.25rem;
+  }
+}
