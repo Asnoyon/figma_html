@@ -37,30 +37,32 @@ html {
   bottom: 45%;
   font-family: "Montserrat";
 }
-.carousel-caption h5 {
+/* .carousel-caption h5 {
   font-size: 4.625rem;
   margin: 0;
 }
 .carousel-caption h1 {
   font-size: 4.625rem;
   margin: 0;
-}
+} */
 .carousel-caption p {
-  font-size: 1.25rem;
+  font-size: 3.5rem;
 }
 
 /* navbar css end here */
 
 /* about section starts here */
-.about_us,
+/* .about_us,
 .service,
-.contact_us {
+.contact_us,
+.profile {
   text-decoration: underline;
   text-decoration-color: #d9d9d9;
   text-decoration-thickness: 0.5rem;
   margin-bottom: 0.5rem;
   text-underline-offset: 1rem;
-}
+} */
+
 .about {
   color: #7d66bf;
   font-family: Montserrat;
@@ -76,10 +78,22 @@ html {
   padding: 0 10rem;
   line-height: 1.7;
 }
-.profile {
-  text-decoration: underline dotted #7d66bf ;
+.about_profile img {
+  width: 25%;
+}
+/* .profile {
+  text-decoration: underline dotted #7d66bf;
   text-underline-offset: 1rem;
-  /* text-decoration: overline ; */
+} */
+.partner_profile {
+  text-align: justify;
+  padding-right: 10rem;
+  line-height: 1.7;
+}
+.partner_profile_2 {
+  text-align: justify;
+  padding-left: 10rem;
+  line-height: 1.7;
 }
 .us {
   color: #7d66bf;
@@ -316,6 +330,12 @@ footer {
 }
 
 /* media query end here */
+@media (max-width: 1500px) {
+  .carousel-caption {
+    right: 0;
+    bottom: 30%;
+  }
+}
 @media (max-width: 998px) {
   html {
     font-size: 75%;
@@ -327,6 +347,18 @@ footer {
     right: 0;
     bottom: 30%;
   }
+  .carousel-caption p {
+    font-size: 3rem;
+  }
+  .partner_profile {
+    padding: 1.25rem 2rem;
+  }
+  .about_text {
+    padding: 1.25rem 2rem;
+  }
+  .about_profile img {
+    width: 45%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -336,6 +368,20 @@ footer {
   .right button {
     width: 7.25rem;
   }
+  .carousel-caption p {
+    font-size: 2.5rem;
+  }
+  .partner_profile_2 {
+    text-align: center;
+    padding: 0 1.65rem;
+    text-align: justify;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    right: 0;
+    bottom: 15%;
+  }
 }
 @media (max-width: 479px) {
   html {
@@ -343,5 +389,9 @@ footer {
   }
   .right button {
     width: 5.25rem;
+  }
+  .carousel-caption {
+    right: 0;
+    bottom: 0;
   }
 }
