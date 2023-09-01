@@ -4,7 +4,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 /* navbar css start here */
@@ -70,6 +69,11 @@ html {
   line-height: 7.5rem; /* 133.333% */
   letter-spacing: -0.188rem;
   padding-right: 0.125rem;
+}
+.about_text {
+  text-align: justify;
+  padding: 0 10rem;
+  line-height: 1.85;
 }
 .us {
   color: #7d66bf;
@@ -314,7 +318,7 @@ footer {
     font-size: 75%;
   }
   .nav-link:hover::after {
-    width: 25%;
+    width: 20%;
   }
   .carousel-caption {
     right: 0;
