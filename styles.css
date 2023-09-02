@@ -1,5 +1,8 @@
 * {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -90,18 +93,15 @@ html {
 }
 
 .carousel-caption h5 {
-  font-size: 4.625rem;
+  font-size: 5.625rem;
   margin: 0;
 }
 .carousel-caption h1 {
-  font-size: 4.625rem;
+  font-size: 5.625rem;
   margin: 0;
 }
 .carousel-caption span {
-  font-size: 1.25rem;
-}
-.carousel-caption p {
-  font-size: 3.5rem;
+  font-size: 1.75rem;
 }
 
 /* navbar css end here */
@@ -314,7 +314,46 @@ html {
   letter-spacing: -0.188rem;
   padding-right: 0.5rem;
 }
-
+.advisory {
+  color: #f3889e;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 7.5rem;
+  letter-spacing: -0.188rem;
+  padding-right: 0.5rem;
+}
+.management {
+  color: #cea1ce;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 7.5rem;
+  letter-spacing: -0.188rem;
+  padding-right: 0.5rem;
+}
+.internal {
+  color: #549bff;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 7.5rem;
+  letter-spacing: -0.188rem;
+  padding-right: 0.5rem;
+}
+.company {
+  color: #17b088;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 7.5rem;
+  letter-spacing: -0.188rem;
+  padding-right: 0.5rem;
+}
 .vat_content {
   border-radius: 0px 200px;
   border: 5px solid #d9d9d9;
@@ -347,6 +386,12 @@ html {
   border-right-style: solid;
   border-right-color: #d9d9d9;
 }
+hr.one {
+  width: 35%;
+  margin: 7rem auto;
+  border: 5px solid #d9d9d9;
+}
+
 /* article end */
 
 footer {
@@ -421,9 +466,7 @@ footer {
     right: 0;
     bottom: 30%;
   }
-  .carousel-caption p {
-    font-size: 3rem;
-  }
+  
   .partner_profile {
     padding: 1.25rem 2rem;
   }
@@ -438,19 +481,24 @@ footer {
     border-bottom-color: #d9d9d9;
     border-right-style: none;
   }
-  /* .article_content .row {
-    position: relative;
-    font-size: 2rem;
-    margin: auto;
+  .internal,
+  .vat,
+  .tax,
+  .advisory,
+  .management,
+  .company,
+  .about {
+    font-size: 4.625rem;
   }
-  .article_content .row::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-bottom: 2px solid blue;
-    width: 25%;
-  } */
+  .us {
+    font-size: 4.625rem;
+  }
+  .carousel-caption h5 {
+    font-size: 4.625rem;
+  }
+  .carousel-caption h1 {
+    font-size: 4.625rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -460,31 +508,37 @@ footer {
   .right button {
     width: 7.25rem;
   }
-  .carousel-caption p {
-    font-size: 2.5rem;
-  }
   .partner_profile_2 {
     text-align: center;
     padding: 0 1.65rem;
     text-align: justify;
   }
-  .carousel-caption p {
-    font-size: 2rem;
+  /* .carousel-caption p {
+    font-size: 2.5rem;
+  } */
+  .internal,
+  .vat,
+  .tax,
+  .advisory,
+  .management,
+  .company,
+  .about {
+    font-size: 3.625rem;
+  }
+  .us {
+    font-size: 3.625rem;
+  }
+  .carousel-caption h5 {
+    font-size: 3.625rem;
+  }
+  .carousel-caption h1 {
+    font-size: 3.625rem;
   }
 }
 @media (max-width: 600px) {
   .carousel-caption {
     right: 0;
     bottom: 25%;
-  }
-  .carousel-caption h5 {
-    font-size: 2.625rem;
-  }
-  .carousel-caption h1 {
-    font-size: 2.625rem;
-  }
-  .carousel-caption p {
-    font-size: 1.5rem;
   }
 }
 @media (max-width: 479px) {
@@ -495,13 +549,26 @@ footer {
     width: 5.25rem;
   }
   .carousel-caption h5 {
-    font-size: 1.85rem;
+    font-size: 2.85rem;
   }
   .carousel-caption h1 {
-    font-size: 1.85rem;
+    font-size: 2.85rem;
   }
   .carousel-caption {
     right: 0;
     bottom: 20%;
+  }
+}
+
+@media (max-width:300px){
+   .carousel-caption h5 {
+    font-size: 1.9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 1.9rem;
+  }
+   .carousel-caption {
+    right: 0;
+    bottom: 15%;
   }
 }
