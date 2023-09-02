@@ -1,5 +1,8 @@
-html {
+* {
   font-family: "Montserrat", sans-serif;
+}
+
+html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -17,6 +20,51 @@ html {
 }
 .navbar-light .navbar-toggler {
   border-color: #7d66bf;
+}
+.about_us,
+.service,
+.contact_us,
+.profile,
+.second_profile {
+  text-decoration: underline;
+  text-decoration-color: #d9d9d9;
+  text-decoration-thickness: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-underline-offset: 1rem;
+}
+.profile_section,
+.profile_section_2 {
+  margin-bottom: 5rem;
+}
+.img-fluid {
+  width: 55%;
+}
+
+/* practice here */
+.figure_msvs {
+  margin: 10% 0;
+}
+.mission {
+  border: 1px solid #d9d9d9;
+
+  border-radius: 1.25rem;
+}
+.vision {
+  border: 1px solid #d9d9d9;
+
+  border-radius: 1.25rem;
+}
+
+/* practice end  */
+.carousel-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 .nav-link::after {
   content: "";
@@ -37,14 +85,21 @@ html {
   bottom: 45%;
   font-family: "Montserrat";
 }
-/* .carousel-caption h5 {
+.carousel-caption {
+  z-index: 2;
+}
+
+.carousel-caption h5 {
   font-size: 4.625rem;
   margin: 0;
 }
 .carousel-caption h1 {
   font-size: 4.625rem;
   margin: 0;
-} */
+}
+.carousel-caption span {
+  font-size: 1.25rem;
+}
 .carousel-caption p {
   font-size: 3.5rem;
 }
@@ -52,17 +107,6 @@ html {
 /* navbar css end here */
 
 /* about section starts here */
-/* .about_us,
-.service,
-.contact_us,
-.profile {
-  text-decoration: underline;
-  text-decoration-color: #d9d9d9;
-  text-decoration-thickness: 0.5rem;
-  margin-bottom: 0.5rem;
-  text-underline-offset: 1rem;
-} */
-
 .about {
   color: #7d66bf;
   font-family: Montserrat;
@@ -71,7 +115,7 @@ html {
   font-weight: 800;
   line-height: 7.5rem; /* 133.333% */
   letter-spacing: -0.188rem;
-  padding-right: 0.125rem;
+  padding-right: 0.5rem;
 }
 .about_text {
   text-align: justify;
@@ -81,10 +125,7 @@ html {
 .about_profile img {
   width: 25%;
 }
-/* .profile {
-  text-decoration: underline dotted #7d66bf;
-  text-underline-offset: 1rem;
-} */
+
 .partner_profile {
   text-align: justify;
   padding-right: 10rem;
@@ -128,9 +169,6 @@ html {
   color: #7d66bf;
   font-family: Montserrat;
   font-size: 1.25rem;
-  /* font-style: normal;
-  font-weight: 700;
-  line-height: 59.5px; */
   margin-top: 1.125rem;
   margin-left: 0.75rem;
 }
@@ -238,37 +276,6 @@ html {
   font-weight: 700;
   line-height: 2.4rem; /* 120% */
 }
-/*responsive*/
-
-/* @media (min-width: 768px) and (max-width: 991px) {
-  .right i {
-    top: -52px;
-    transform: rotate(90deg);
-    left: 50%;
-  }
-} */
-
-/* @media (max-width: 767px) {
-  .left {
-    padding: 90px 15px;
-    text-align: center;
-  }
-  .left h2 {
-    font-size: 25px;
-  }
-  .right {
-    padding: 25px;
-  }
-  .right i {
-    top: -52px;
-    transform: rotate(90deg);
-    left: 46%;
-  }
-  .right button {
-    width: 150px;
-    padding: 12px 0;
-  }
-} */
 
 /* contact us end here */
 
@@ -286,9 +293,72 @@ html {
   padding-top: 8%;
 }
 
+/* vat service start */
+.vat {
+  color: #fff259;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 7.5rem;
+  letter-spacing: -0.188rem;
+  padding-right: 0.5rem;
+}
+.tax {
+  color: #549bff;
+  font-family: Montserrat;
+  font-size: 5.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 7.5rem;
+  letter-spacing: -0.188rem;
+  padding-right: 0.5rem;
+}
+
+.vat_content {
+  border-radius: 0px 200px;
+  border: 5px solid #d9d9d9;
+  margin: 5rem 5rem;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 5rem;
+}
+.vat_text {
+  line-height: 1.7;
+}
+
+/* vat end */
+/* article start */
+.article {
+  text-align: center;
+}
+.title {
+  color: #7d778c;
+}
+
+.article_content {
+  color: #d9d9d9;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+.col {
+  border-right-style: solid;
+  border-right-color: #d9d9d9;
+}
+/* article end */
+
 footer {
-  background: #7d66bf;
-  padding: 5.375rem 0;
+  background: linear-gradient(0deg, #02001a 0%, #342066 100%);
+  stroke-width: 0.342px;
+  stroke: #000;
+  /* padding: 5.375rem 0; */
+  padding-bottom: 3rem;
+}
+.fa-brands,
+.footer_icon {
+  color: #d9d8d5;
 }
 .single-content {
   text-align: center;
@@ -335,6 +405,10 @@ footer {
     right: 0;
     bottom: 30%;
   }
+  .col-md-2 {
+    border-bottom-style: solid;
+    border-bottom-color: #d9d9d9;
+  }
 }
 @media (max-width: 998px) {
   html {
@@ -359,6 +433,24 @@ footer {
   .about_profile img {
     width: 45%;
   }
+  .col {
+    border-bottom-style: solid;
+    border-bottom-color: #d9d9d9;
+    border-right-style: none;
+  }
+  /* .article_content .row {
+    position: relative;
+    font-size: 2rem;
+    margin: auto;
+  }
+  .article_content .row::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid blue;
+    width: 25%;
+  } */
 }
 
 @media (max-width: 767px) {
@@ -376,11 +468,23 @@ footer {
     padding: 0 1.65rem;
     text-align: justify;
   }
+  .carousel-caption p {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 600px) {
   .carousel-caption {
     right: 0;
-    bottom: 15%;
+    bottom: 25%;
+  }
+  .carousel-caption h5 {
+    font-size: 2.625rem;
+  }
+  .carousel-caption h1 {
+    font-size: 2.625rem;
+  }
+  .carousel-caption p {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 479px) {
@@ -390,8 +494,14 @@ footer {
   .right button {
     width: 5.25rem;
   }
+  .carousel-caption h5 {
+    font-size: 1.85rem;
+  }
+  .carousel-caption h1 {
+    font-size: 1.85rem;
+  }
   .carousel-caption {
     right: 0;
-    bottom: 0;
+    bottom: 20%;
   }
 }
