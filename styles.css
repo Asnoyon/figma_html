@@ -13,6 +13,9 @@ html {
 }
 
 /* navbar css start here */
+.logo {
+  cursor: pointer;
+}
 .navbar {
   background: #d9d9d9 !important;
   padding-left: 2.225rem;
@@ -212,7 +215,7 @@ html {
   box-shadow: 0 0.125 1.25rem -0.313rem rgba(0, 0, 0, 0.5);
 }
 .left {
-  background: #A79FBE;
+  background: #a79fbe;
   padding: 12.5rem 6.125rem;
 }
 .left h2 {
@@ -466,7 +469,7 @@ footer {
     right: 0;
     bottom: 30%;
   }
-  
+
   .partner_profile {
     padding: 1.25rem 2rem;
   }
@@ -560,14 +563,14 @@ footer {
   }
 }
 
-@media (max-width:300px){
-   .carousel-caption h5 {
+@media (max-width: 300px) {
+  .carousel-caption h5 {
     font-size: 1.9rem;
   }
   .carousel-caption h1 {
     font-size: 1.9rem;
   }
-   .carousel-caption {
+  .carousel-caption {
     right: 0;
     bottom: 15%;
   }
